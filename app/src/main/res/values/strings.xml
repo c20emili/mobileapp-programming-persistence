@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Persistence</string>
+    <string name="rubrik">Rubrik?</string>
+    <string name="read">Read</string>
+    <string name="write">Write</string>
+    <string name="textf_lt1">Textfält1</string>
+    <string name="textf_lt2">Textfält2</string>
+    <string name="textf_lt3">Textfält3</string>
 </resources>
