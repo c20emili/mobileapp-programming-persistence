@@ -7,6 +7,7 @@ public class Tables {
         static final String COLUMN_NAME_ID = "id";
         static final String COLUMN_NAME_NAME = "name";
         static final String COLUMN_NAME_SIZE = "size";
+        static final String COLUMN_NAME_DEPTH = "depth";
 
     }
 
@@ -15,7 +16,8 @@ public class Tables {
             "CREATE TABLE " + Lake.TABLE_NAME + " (" +
                     Lake.COLUMN_NAME_ID + " INTEGER PRIMARY KEY," +
                     Lake.COLUMN_NAME_NAME + " TEXT," +
-                    Lake.COLUMN_NAME_SIZE + " INT)";
+                    Lake.COLUMN_NAME_SIZE + " INT," +
+                    Lake.COLUMN_NAME_DEPTH + " INT)";
 
     static final String SQL_DELETE_TABLE_LAKE =
             // "DROP TABLE IF EXISTS lake"
