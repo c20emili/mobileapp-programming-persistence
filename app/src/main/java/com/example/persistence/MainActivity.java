@@ -42,7 +42,19 @@ public class MainActivity extends AppCompatActivity {
                 addLake(n,s,d);
             }
         });
-
+        textView = findViewById(R.id.text1);
+        Button read=findViewById(R.id.read);
+        read.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                List<Lake> temp = fetchLakes();
+                String tmp = "";
+                for (int i = 0; i <temp.size() ; i++) {
+                    tmp += temp.get(i).info()+"\n";
+                }
+                textView.setText(tmp);
+            }
+        });
 
     }
 
