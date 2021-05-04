@@ -52,6 +52,10 @@ public class Lake {
     public int getSize() {
         return size;
     }
+    public String info(){
+        String txt = "Name: "+name+" / Area: "+size+" Meters / Depth: "+depth+" Meters";
+        return txt;
+    }
 
     @Override
     public String toString(){
