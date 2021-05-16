@@ -53,7 +53,7 @@ public class Lake {
         return size;
     }
     public String info(){
-        String txt = "Name: "+name+" / Area: "+size+" Meters / Depth: "+depth+" Meters";
+        String txt = "Name: "+name+" / Area: "+size+" Km^3 / Average depth: "+depth+" Meters";
         return txt;
     }
 
