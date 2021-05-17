@@ -1,5 +1,3 @@
-
-# Rapport
 # Rapport
 Först skapades de olika widgets det var krav på alla med eget id så de kunde användas i java koden.
 ```xml

@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase database;
     private Helper helper;
     private TextView textView;
+    private EditText editText1 =findViewById(R.id.etext1);
+    private EditText editText2 =findViewById(R.id.etext2);
+    private EditText editText3 =findViewById(R.id.etext3);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText editText1 =findViewById(R.id.etext1);
-                EditText editText2 =findViewById(R.id.etext2);
-                EditText editText3 =findViewById(R.id.etext3);
                 String n= editText1.getText().toString();
                 int s=Integer.parseInt(editText2.getText().toString());// konverterar string värdet till int
                 int d=Integer.parseInt(editText3.getText().toString());
