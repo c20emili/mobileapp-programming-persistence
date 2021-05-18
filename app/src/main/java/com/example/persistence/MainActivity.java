@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private SQLiteDatabase database;
     private Helper helper;
     private TextView textView;
-    private EditText editText1 =findViewById(R.id.etext1);
-    private EditText editText2 =findViewById(R.id.etext2);
-    private EditText editText3 =findViewById(R.id.etext3);
+    private EditText editText1;
+    private EditText editText2;
+    private EditText editText3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity {
 
         helper = new Helper(this);
         database = helper.getWritableDatabase();
-
+        editText1 =findViewById(R.id.etext1);
+        editText2 =findViewById(R.id.etext2);
+        editText3 =findViewById(R.id.etext3);
         Button write = findViewById(R.id.write);
         write.setOnClickListener(new View.OnClickListener() {
             @Override
